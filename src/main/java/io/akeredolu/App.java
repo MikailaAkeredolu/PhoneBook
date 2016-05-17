@@ -1,22 +1,25 @@
 package io.akeredolu;
 
-import java.util.ArrayList;
-
 /**
  * Created by mikailaakeredolu on 5/16/16.
  */
 public class App {
 
     public static void main(String[] args) {
-
-        PhoneBook person1 = new PhoneBook();
+        /*
+        Person person1 = new Person();
         PhoneNumbers person1Number = new PhoneNumbers("718-243-2603");
-        person1.addEntries("Booby Digital", person1Number);
+        person1.addEntries("Booby Digital", "2127867654");
+        */
 
-        PhoneBook person2 = new PhoneBook();
-        PhoneNumbers person2Number = new PhoneNumbers("718-419-0003");
-        person2.addEntries("OG Bobby Johnson", person2Number);
+        Person person2 = new Person();
+        //PhoneNumbers person2Number = new PhoneNumbers("718-243-2603");
 
-        System.out.println(person1Number.getPhoneNumbers());
+        person2.addEntries("Digital", "132467654");
+        String result = person2.reverseLookUp("132467654");
+        System.out.println(result+"oo");
+
+
+        //System.out.println(person1Number.getPhoneNumbers());
     }
 }

@@ -11,11 +11,11 @@ public class PhoneNumbers {
 
    // private String number;
 
-
+/*
     public List<String> getPhoneNumbers() {
         return phoneNumbers;
     }
-
+*/
     public PhoneNumbers(String number){
         //this.number = number;
         phoneNumbers = new ArrayList<>();
@@ -27,6 +27,11 @@ public class PhoneNumbers {
 
     }
 
+    public List<String> getAllNumbers(){
+
+        return phoneNumbers;
+    }
+
     public void removePhoneNumber(int index){
         phoneNumbers.remove(index - 1);
     }
@@ -36,16 +41,10 @@ public class PhoneNumbers {
 
     }
 
+
+
     public void removeIndividualNumbers(String number){
         phoneNumbers.remove(number);
     }
 
-
-  /* public String getNumber(){
-        return number;
-    }
-    //public void setNumber(String number) {
-        this.number = number;
-    }
-    */
 }
