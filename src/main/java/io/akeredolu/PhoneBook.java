@@ -16,11 +16,6 @@ public class PhoneBook {
 
     }
 
-    public PhoneNumbers lookUp(PhoneNumbers number){
-        return phoneBookMap.get(number);
-
-    }
-
     public void addEntries(String name, PhoneNumbers number){
         phoneBookMap.put(name,number);
 
@@ -41,6 +36,11 @@ public class PhoneBook {
     public Map<String, PhoneNumbers> getPhoneBookMap() {
         return phoneBookMap;
     }
+
+    public PhoneNumbers lookup(String name) {
+        return phoneBookMap.get(name);
+    }
+
 
     //getter
 

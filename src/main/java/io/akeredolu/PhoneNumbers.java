@@ -14,7 +14,7 @@ public class PhoneNumbers {
     public PhoneNumbers(String number){
         this.number = number;
         phoneNumbers = new ArrayList<>();
-        addIndividualNumber(number);
+        //addIndividualNumber(number);
     }
 
     public int getListOfPhoneNumbers(){
