@@ -2,6 +2,8 @@ package io.akeredolu;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.List;
+
 /**
  * Created by mikailaakeredolu on 5/16/16.
  */
@@ -12,17 +14,22 @@ public class PhoneBookSpec {
         PhoneBook person1 = new PhoneBook();
         PhoneNumbers person1Number = new PhoneNumbers("7182432603");
         person1.addEntries("Booby Digital", person1Number);
-        String expectedEntry = "7182432603";
-        String actualEntry = person1Number.getNumber();
+        boolean expectedEntry = true;
+        boolean actualEntry = person1Number.getPhoneNumbers().contains("7182432603");
         Assert.assertEquals(expectedEntry,actualEntry);
     }
 
     @Test
     public void lookUpTest(){
         PhoneBook phoneBook = new PhoneBook();
+        String contactName = "Mike Jones";
         String contactNumber = "7182432603";
-        phoneBook.addEntries(contactNumber, new PhoneNumbers(contactNumber));
-        Assert.assertNotNull(phoneBook.lookup(contactNumber));
+        phoneBook.addEntries(contactName, new PhoneNumbers(contactNumber));
+        boolean expectedValue = true;
+        boolean actualValue = phoneBook.lookup(contactName).getPhoneNumbers().contains("7182432603");
+        Assert.assertEquals(expectedValue,actualValue);
+
+
     }
 
     @Test

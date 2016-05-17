@@ -9,12 +9,17 @@ import java.util.List;
 public class PhoneNumbers {
     List<String>phoneNumbers;
 
-    private String number;
+   // private String number;
+
+
+    public List<String> getPhoneNumbers() {
+        return phoneNumbers;
+    }
 
     public PhoneNumbers(String number){
-        this.number = number;
+        //this.number = number;
         phoneNumbers = new ArrayList<>();
-        //addIndividualNumber(number);
+        addIndividualNumber(number);
     }
 
     public int getListOfPhoneNumbers(){
@@ -36,11 +41,11 @@ public class PhoneNumbers {
     }
 
 
-    public String getNumber(){
+  /* public String getNumber(){
         return number;
     }
-    public void setNumber(String number) {
+    //public void setNumber(String number) {
         this.number = number;
     }
-
+    */
 }

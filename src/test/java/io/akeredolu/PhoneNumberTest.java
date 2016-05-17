@@ -17,7 +17,8 @@ public class PhoneNumberTest {
     }
     @Test
     public void testNumber(){
-        assertEquals("8182123333", new PhoneNumbers("8182123333").getNumber());
+
+        assertEquals("8182123333", new PhoneNumbers("8182123333").getPhoneNumbers());
     }
 
     @Test

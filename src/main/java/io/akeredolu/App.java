@@ -17,6 +17,6 @@ public class App {
         PhoneNumbers person2Number = new PhoneNumbers("718-419-0003");
         person2.addEntries("OG Bobby Johnson", person2Number);
 
-        System.out.println(person1Number.getNumber());
+        System.out.println(person1Number.getPhoneNumbers());
     }
 }
