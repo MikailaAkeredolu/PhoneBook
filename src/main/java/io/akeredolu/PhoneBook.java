@@ -17,8 +17,6 @@ public class PhoneBook {
 
     }
 
-
-
     public void addEntries(String name, PhoneNumbers number){
         phoneBookMap.put(name,number);
 
@@ -44,11 +42,5 @@ public class PhoneBook {
 
         return phoneBookMap.get(name);
     }
-
-
-    //getter
-
-
-
 
 }
